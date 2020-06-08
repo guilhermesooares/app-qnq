@@ -1,6 +1,6 @@
-# app-laurassant
+# app-qnq
 
-> laurassant website
+> qnq website
 
 ## Build Setup
 
