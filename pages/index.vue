@@ -29,14 +29,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import url(styles/styles.scss);
-@import url(styles/normalize.scss);
-@import url(styles/breakpoints.scss);
-
-.container {
-  padding: 1.5rem;
-}
-
 .container {
   padding: 1.7rem;
   &__header {

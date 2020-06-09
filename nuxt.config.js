@@ -24,6 +24,9 @@ export default {
   ** Global CSS
   */
   css: [
+    '@/styles/normalize.scss',
+    '@/styles/styles.scss',
+    '@/styles/breakpoints.scss'
   ],
   /*
   ** Plugins to load before mounting the App
