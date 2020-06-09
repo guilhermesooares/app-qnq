@@ -9,7 +9,7 @@
     </div>
 
     <div class="container-content__actions">
-      <Button>Doar agora</Button>
+      <Button to="donate">Doar agora</Button>
     </div>
   </div>
 </template>
@@ -29,8 +29,8 @@ export default {
 
 .container-content {
   &__titles {
-    padding-top: 10vh;
-    padding-bottom: 6rem;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
     text-align: center;
     h1 {
       font-weight: 700;
