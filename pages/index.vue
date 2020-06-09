@@ -38,14 +38,15 @@ export default {
 }
 
 .container {
-  padding: 1.5rem;
+  padding: 1.7rem;
   &__header {
     svg {
       width: 6rem;
     }
   }
   &__content {
-    padding-top: 25vh;
+    padding-top: 10vh;
+    padding-bottom: 6rem;
     text-align: center;
     h1 {
       font-weight: 700;
@@ -56,7 +57,6 @@ export default {
     .btn {
       width: 100%;
     }
-    margin-top: 6rem;
   }
 }
 </style>
