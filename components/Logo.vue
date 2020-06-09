@@ -13,6 +13,7 @@
     />
   </svg>
 </template>
+
 <style>
 .logo {
   animation: 1s appear;

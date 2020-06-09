@@ -1,42 +1,34 @@
 <template>
-  <div class="container">
-    <div class="container__header">
-      <Logo />
-    </div>
-    <div class="container__content">
+  <div class="container-content">
+    <div class="container-content__titles">
       <h1>Obrigado por assistir a live do Quarta no Quarto</h1>
       <p>
         Faça agora sua doação para o grupo
         <strong>Colecionando Sorrisos e nos ajude a ajudar</strong>!
       </p>
     </div>
-    <div class="container__actions">
-      <Button @click="donate = true">Doar agora</Button>
+
+    <div class="container-content__actions">
+      <Button>Doar agora</Button>
     </div>
   </div>
 </template>
 
 <script>
 import Button from '~/components/Button'
-import Logo from '~/components/Logo'
 
 export default {
   components: {
-    Logo,
     Button
   }
 }
 </script>
 
 <style lang="scss">
-.container {
-  padding: 1.7rem;
-  &__header {
-    svg {
-      width: 6rem;
-    }
-  }
-  &__content {
+@import 'styles/breakpoints.scss';
+
+.container-content {
+  &__titles {
     padding-top: 10vh;
     padding-bottom: 6rem;
     text-align: center;
@@ -49,6 +41,29 @@ export default {
     .btn {
       width: 100%;
     }
+  }
+}
+
+@media #{$large-and-up} {
+  .container-content {
+    &__titles {
+      text-align: left;
+      h1 {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__actions {
+      .btn {
+        max-width: 12.5rem;
+      }
+    }
+  }
+}
+
+@media #{$x-large-and-up} {
+  .container-content {
+    padding: 10rem 1rem 5rem 10rem;
   }
 }
 </style>
