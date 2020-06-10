@@ -25,7 +25,7 @@
           <strong>Líder:</strong>
           {{city.leader}}
         </span>
-        <span>
+        <span v-if="city.donations">
           <strong>Local para arrecadação de doações:</strong>
           {{city.donations}}
         </span>
@@ -35,8 +35,21 @@
           rel="noopener noreferrer"
           :href="`https://api.whatsapp.com/send?phone=${city.phone}&text=Oi ${city.leader}, vim pela live do Quarta no Quarto e gostaria de saber como faço para doar !`"
         >
-          <Button >💬 Entrar em contato via WhatsApp</Button>
+          <Button>💬 Entrar em contato via WhatsApp</Button>
         </a>
+      </div>
+      <div class v-if="newCities.length === 0">
+        <span>
+          Ainda não temos Colecionando Sorrisos em
+          <strong>{{city}}</strong>, mas clique no botão abaixo que vamos direcionar sua ajuda.
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            :href="`https://api.whatsapp.com/send?phone=583899105979&text=Oi Michelle, sou de ${city} e vim pela live do Quarta no Quarto. Gostaria de saber como faço para doar !`"
+          >
+            <Button>💬 Entrar em contato via WhatsApp</Button>
+          </a>
+        </span>
       </div>
     </div>
   </div>
@@ -60,6 +73,19 @@ export default {
           phone: '553892008813',
           donations:
             'Padaria Edicasa - Rua Campina Grande, 549. Bairro: Gameleira ou Hotel Yara - Avenida - Manoel Athayde, 870. Bairro Saudade'
+        },
+
+        {
+          leader: 'Abner Ritchelly',
+          city: 'Francisco Sá - MG',
+          phone: '583891205676'
+        },
+
+        {
+          leader: 'Julia',
+          city: 'Várzea da Palma - MG',
+          phone: '553888045727',
+          donations: 'Avenida Barão do Guicui, 1958'
         },
 
         {
