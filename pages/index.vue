@@ -34,8 +34,8 @@ export default {
 
 .container-content {
   &__titles {
-    padding-top: 4rem;
-    padding-bottom: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
     text-align: center;
     h1 {
       font-weight: 700;
