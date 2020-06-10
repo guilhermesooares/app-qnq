@@ -14,7 +14,7 @@
           <strong>usando cartão de crédito ou boleto</strong>
         </span>
       </div>
-      <div>
+      <!-- <div>
         <nuxt-link to="/supplies">
           <Button>Alimentos, roupas e itens de higiene...</Button>
         </nuxt-link>
@@ -23,7 +23,7 @@
           Você pode doar estes itens e o
           <strong>Colecionando Sorrisos</strong> vai fazer chegar em quem precisa
         </span>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
