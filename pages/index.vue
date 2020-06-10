@@ -12,6 +12,9 @@
       <nuxt-link to="donate">
         <Button>Doar agora</Button>
       </nuxt-link>
+      <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UC34hG4OwyHpgNAQXJ9XVUMw">
+        <Button >Acessar a live</Button>
+      </a>
     </div>
   </div>
 </template>
@@ -41,6 +44,7 @@ export default {
   }
   &__actions {
     .btn {
+      margin-bottom: 1rem;
       width: 100%;
     }
   }
@@ -57,7 +61,8 @@ export default {
 
     &__actions {
       .btn {
-        max-width: 12.5rem;
+        margin-right: 1rem;
+        max-width: 13rem;
       }
     }
   }
