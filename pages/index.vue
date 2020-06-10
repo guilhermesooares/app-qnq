@@ -9,7 +9,9 @@
     </div>
 
     <div class="container-content__actions">
-      <Button to="donate">Doar agora</Button>
+      <nuxt-link to="donate">
+        <Button>Doar agora</Button>
+      </nuxt-link>
     </div>
   </div>
 </template>

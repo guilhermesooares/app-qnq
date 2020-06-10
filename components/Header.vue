@@ -1,6 +1,8 @@
 <template>
   <div class="container__header">
-    <Logo />
+    <nuxt-link to="/">
+      <Logo />
+    </nuxt-link>
   </div>
 </template>
 

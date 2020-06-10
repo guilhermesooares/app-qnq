@@ -1,30 +1,24 @@
 <template>
-  <div class="donate">
-    <div class="donate__titles">
-      <h1>Qual o tipo da doação?</h1>
+  <div class="supplies">
+    <div class="supplies__titles">
+      <h1>Doar usando ...</h1>
     </div>
-    <div class="donate-actions">
+    <!-- <div class="supplies-actions">
       <div>
-        <nuxt-link to="/financial">
-          <Button>Recursos Financeiros</Button>
-        </nuxt-link>
-
+        <Button to="supplies">Boleto</Button>
         <span>
           Você pode fazer uma doação
           <strong>usando cartão de crédito ou boleto</strong>
         </span>
       </div>
       <div>
-        <nuxt-link to="/supplies">
-          <Button>Alimentos, roupas e itens de higiene...</Button>
-        </nuxt-link>
-
+        <Button to="supplies">Cartão de Crédito</Button>
         <span>
           Você pode doar estes itens e o
           <strong>Colecionando Sorrisos</strong> vai fazer chegar em quem precisa
         </span>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -41,7 +35,7 @@ export default {
 <style lang="scss">
 @import 'styles/breakpoints.scss';
 
-.donate {
+.supplies {
   &__titles {
     padding-top: 3rem;
     padding-bottom: 1rem;
@@ -53,7 +47,7 @@ export default {
   }
 }
 
-.donate-actions {
+.supplies-actions {
   padding: 0% 15% 0% 15%;
   div {
     text-align: center;
@@ -66,7 +60,7 @@ export default {
 }
 
 @media #{$large-and-up} {
-  .donate {
+  .supplies {
     &__titles {
       text-align: left;
       h1 {
@@ -74,7 +68,7 @@ export default {
       }
     }
   }
-  .donate-actions {
+  .supplies-actions {
     display: flex;
     padding: 0rem;
     flex-direction: column;
@@ -97,7 +91,7 @@ export default {
 }
 
 @media #{$x-large-and-up} {
-  .donate {
+  .supplies {
     padding: 10rem 1rem 5rem 10rem;
   }
 }

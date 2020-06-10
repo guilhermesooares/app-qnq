@@ -1,16 +1,11 @@
 <template>
-  <nuxt-link :to="to">
-    <button @click="$emit('click')" class="btn btn-1">
-      <slot></slot>
-    </button>
-  </nuxt-link>
+  <button @click="$emit('click')" class="btn btn-1">
+    <slot></slot>
+  </button>
 </template>
 
 <script>
 export default {
-  props:{
-    to: String
-  }
 }
 </script>
 
